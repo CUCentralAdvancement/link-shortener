@@ -1,10 +1,39 @@
-# Project Title
+# Link Shortener
 
 Intro sentence on the purpose of the project.
 
 The readme will flow from the perspective of a new developer being on-boarded to your project. 
 Each project readme template should be filled in by the dev who created the project, and it 
 needs to be finished before other developers should be asked to work on any project.
+
+## Features
+
+This application will:
+
+- Redirect URIs to a different domain.
+- Render a form for creating links.
+- Render a filterable list of current links.
+
+Bitly was referenced for a "feature complete" version of a link shortening service. All
+possible features are listed in the [feature docs section](docs/features.md).
+
+## Stack and Services
+
+The stack will use Fiber and Redis...
+
+The first step of the local development install instructions is to set up environmental 
+variables for the services being used. Some install scripts require those variables to be 
+present when ran, so it's important to list out the different services a developer will need 
+to connect to.
+
+Most of the environmental variables will be listed in Heroku's admin UI, but make sure to
+mention where to find the config info.
+
+Services:
+- Something for media hosting
+- Something for search
+- Something for background worker/queue processing
+- I think you get the point...
 
 ## Local Development Setup
 
@@ -23,9 +52,8 @@ chaining together several commands with some manual step instructions.
 # The .env file is a standard matching names to Heorku config vars.
 cp .env.example .env
 
-# Change language dependencies based on .tool-versions.
-asdf shell node 14.16.0
-asdf shell yarn 1.22.0
+# Add Go to asdf if not installed already.
+asdf plugin add go
 
 # Since node is involved in most projects, use yarn to standardize
 # running commands.
@@ -60,22 +88,6 @@ them similarly on Heroku and locally.
 After you finish writing the section, clone down your repository in a fresh directory to see 
 if you can follow the instructions and get a working site. Often times, there's one or two 
 key instructions left out in the first draft.
-
-## Services
-
-The first step of the previous install instructions was to set up environmental variables 
-for the services being used. Some install scripts require those variables to be present 
-when ran so it's important to list out the different services a developer will need to 
-connect to.
-
-Most of the environmental variables will be listed in Heroku's admin UI, but make sure to 
-mention where to find the config info.
-
-Services:
-- Something for media hosting
-- Something for search
-- Something for background worker/queue processing
-- I think you get the point...
 
 ## Testing
 
