@@ -19,7 +19,8 @@ possible features are listed in the [feature docs section](docs/features.md).
 
 ## Stack and Services
 
-The stack will use Fiber and Redis...
+The stack will use Fiber and Redis...It is also inspired by a Fiber recipe:
+https://github.com/gofiber/recipes/tree/master/url-shortener-api
 
 The first step of the local development install instructions is to set up environmental 
 variables for the services being used. Some install scripts require those variables to be 
